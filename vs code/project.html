@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const progressBars = document.querySelectorAll('.progress');
+
+    progressBars.forEach(bar => {
+        const percent = bar.dataset.percent;
+        bar.style.width = percent + '%';
+    });
+});
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Your Profession</p>
+            <a href="resume.pdf" class="download-button" download>Download Resume</a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>A brief and compelling description of yourself, your goals, and your passions.</p>
+    </section>
+
+    <section id="experience" class="container timeline">
+        <h2>Experience</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Job Title</h3>
+                    <p class="date">Start Date - End Date</p>
+                    <p>Description of your responsibilities and achievements.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Another Job Title</h3>
+                    <p class="date">Start Date - End Date</p>
+                    <p>Another Description.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="container timeline">
+        <h2>Education</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Degree/Certification</h3>
+                    <p class="date">Start Date - End Date</p>
+                    <p>Institution and relevant details.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Another Degree/Certification</h3>
+                    <p class="date">Start Date - End Date</p>
+                    <p>Another Institution and relevant details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <p>Skill Name</p>
+                <div class="progress-bar">
+                    <div class="progress" data-percent="90"></div>
+                </div>
+            </div>
+             <div class="skill-item">
+                <p>Another Skill Name</p>
+                <div class="progress-bar">
+                    <div class="progress" data-percent="70"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

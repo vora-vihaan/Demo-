@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veggie Delight - Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="menu-page">
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Veggie Delight Logo">
+      <h1>Veggie Delight</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+    </nav>
+  </header>
+
+  <main>
+    <input type="text" id="searchBar" placeholder="Search food..." onkeyup="searchItems()"/>
+    <section id="foodItems" class="grid"></section>
+
+    <aside class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p>Total: ₹<span id="totalAmount">0</span></p>
+      <button onclick="checkout()">Checkout</button>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Veggie Delight</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

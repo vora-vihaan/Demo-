@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Form Practice</title>
+    </head>
+    <body>
+        <form>
+          <h1>Payment Form</h1>
+          <h2>Customer Information</h2>
+          <h3>* are must be filled compulsorily</h3>
+          <p>Name:*<input type="text" name="name" required></p>
+          <p>
+            Male<input type="radio" name="gender" required>
+            female<input type="radio" name="gender" required>
+        </p> 
+        <p>
+            Address:<textarea name="address" id="address" cols="100" rows="5"></textarea>
+        </p>
+        <p>
+            Email:*<input type="email" name="email" id="email" required>
+        </p> 
+        <p>Pincode:<input type="number" name="pincode" id="pincode"></p>
+        <h2>Payment Details</h2>
+        <p>
+            Card Type:*
+            <select name="card_type" id="card_type" required>
+                <option value="">---Select a Card Type---</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="American Express">American Express</option>            
+            </select>
+        </p>
+        <p>
+            Card Number:*<input type="number" name="card_number" id="card_number" required>         
+        </p>
+        <p>
+            Expiry Date:*<input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>
+                CVV:*<input type="password" name="cvv_no" id="cvv_no" required>
+            </p>
+                <input type="submit" value="Pay Now">
+                <input type="reset" value="Reset">
+                
+        </form>
+    </body>
+</html>

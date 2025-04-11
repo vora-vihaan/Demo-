@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color:#27ae60;;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2d3436;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #27ae60;
+}
+
+.hero {
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  background-color: rgba(255,255,255,0.8);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #2ecc71;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1em;
+  text-align: center;
+}
+
+.card-body button {
+  background: #27ae60;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-body button:hover {
+  background: #2ecc71;
+}
+
+.cart {
+  background: white;
+  padding: 1em;
+  border-radius: 10px;
+  margin: 2em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #27ae60;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+}
